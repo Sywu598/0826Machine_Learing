@@ -24,12 +24,15 @@ Scikit-learn 等工具應用於資料分析與機器學習模型建立。
 - Data Preprocessing
 - Data Cleaning
 - Feature Engineering
+- Feature Selection
+- Feature Transformation
 - Dimensionality Reduction
 - Linear Regression
 - Linear Models
 - Regularization
 - Machine Learning Pipeline
 - Model Training
+- Model Evaluation
 - Prediction
 
 ---
@@ -41,15 +44,15 @@ Scikit-learn 等工具應用於資料分析與機器學習模型建立。
 - Pandas
 - Scikit-learn
 
-
-
 ---
 
-## 📊 專案內容
+## 📓 Notebook 實作內容
 
-### 1. 📂 資料前處理
+### 1. 資料前處理
 
-針對原始 Dataset 進行資料分析與前處理。
+**Notebook：**
+
+`1 資料前處理-Pre Model Workflow and Data Preprocessing.ipynb`
 
 主要內容：
 
@@ -59,91 +62,93 @@ Scikit-learn 等工具應用於資料分析與機器學習模型建立。
 - 資料型態確認
 - 資料轉換
 - Data Preprocessing
+- Feature Engineering
 
-將原始資料整理成適合 Machine Learning
+將原始 Dataset 整理成適合 Machine Learning
 模型使用的格式。
 
 ---
 
-### 2. 🔧 Feature Engineering
+### 2. 資料降維
 
-針對 Dataset 中的特徵進行整理與轉換。
+**Notebook：**
 
-主要練習：
+`2 資料降維-Dimensionality Reduction Techniques.ipynb`
 
-- Feature Selection
+主要內容：
+
+- Dimensionality Reduction
+- Principal Component Analysis（PCA）
 - Feature Transformation
-- 特徵整理
-- 特徵標準化
-- 建立模型所需的輸入資料
-
-透過 Feature Engineering，
-讓資料更適合後續模型訓練。
-
----
-
-### 3. 📉 Dimensionality Reduction
-
-進行資料降維（Dimensionality Reduction）練習。
-
-主要目的：
-
-- 降低資料維度
 - 減少特徵數量
-- 簡化資料結構
-- 協助資料分析
-- 降低模型處理複雜度
+- 簡化高維度資料
 
-透過資料降維了解高維度資料的處理方式。
-
----
-
-### 4. 📈 Linear Regression
-
-使用 Linear Regression 建立迴歸模型，
-學習輸入特徵與預測結果之間的關係。
-
-基本流程：
-
-Dataset → Data Preprocessing → Feature Engineering
-→ Linear Regression → Model Training → Prediction
-
-並將迴歸模型應用於房價預測相關練習。
+透過資料降維方法了解高維度資料的處理方式，
+並降低資料的複雜度。
 
 ---
 
-### 5. 🧮 Regularization
+### 3. 迴歸模型與正則化
 
-進一步學習 Linear Models 與 Regularization。
+**Notebook：**
 
-Regularization 用於控制模型複雜度，
-並降低模型發生 Overfitting 的風險。
+`3 迴歸模型-Linear Models and Regularization.ipynb`
 
-主要練習：
+主要內容：
 
+- Linear Regression
 - Linear Models
-- Regularization
 - Model Training
+- Model Evaluation
+- Regularization
 - Model Comparison
+- Prediction
+
+並將 Linear Regression 應用於房價預測相關練習。
 
 ---
 
-### 6. 🔄 Machine Learning Pipeline
+## 📁 資料集
 
-使用 Machine Learning Pipeline
-將資料處理與模型訓練流程整合。
+本專案使用多個 Dataset 進行資料處理與
+Machine Learning 練習。
 
-主要流程：
+### Housing Dataset
 
+`data/housing.csv`
+
+用於房價預測與迴歸模型相關練習。
+
+### Regression Dataset
+
+`data/regression_data.csv`
+
+用於 Linear Regression 模型訓練與相關練習。
+
+`data` 資料夾中也包含其他課程練習使用的資料集，
+用於資料前處理、特徵工程與資料轉換。
+
+---
+
+## 🔄 Machine Learning Workflow
+
+本專案的整體機器學習流程：
+
+```text
 Dataset
-↓
+   ↓
+資料分析
+   ↓
 Data Preprocessing
-↓
-Feature Transformation
-↓
-Machine Learning Model
-↓
-Model Training
-↓
+   ↓
+Feature Engineering
+   ↓
+Dimensionality Reduction
+   ↓
+Linear Regression
+   ↓
+Regularization
+   ↓
+Model Evaluation
+   ↓
 Prediction
-
