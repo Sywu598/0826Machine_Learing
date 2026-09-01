@@ -10,8 +10,8 @@
 Feature Engineering、Dimensionality Reduction、
 Model Training 與 Prediction，建立完整的 Machine Learning Workflow。
 
-透過實際操作，將課程中學習的 Python、Pandas、
-Scikit-learn 等工具應用於資料分析與機器學習模型建立。
+透過實際操作，將課程中學習的 Python、NumPy、Pandas、
+Matplotlib 與 Scikit-learn 等工具應用於資料分析與機器學習模型建立。
 
 ---
 
@@ -19,7 +19,10 @@ Scikit-learn 等工具應用於資料分析與機器學習模型建立。
 
 本專案主要練習以下 Machine Learning 技術：
 
-- Python 資料處理
+- Python 程式設計
+- NumPy 數值運算
+- Pandas 資料處理
+- Matplotlib 資料視覺化
 - Dataset 資料分析
 - Data Preprocessing
 - Data Cleaning
@@ -41,18 +44,18 @@ Scikit-learn 等工具應用於資料分析與機器學習模型建立。
 
 - Python
 - Jupyter Notebook
+- NumPy
 - Pandas
+- Matplotlib
 - Scikit-learn
 
 ---
 
-## 📓 Notebook 實作內容
+## 📂 專案內容
 
-### 1. 資料前處理
+### 1. 📊 資料前處理
 
-**Notebook：**
-
-`1 資料前處理-Pre Model Workflow and Data Preprocessing.ipynb`
+針對原始 Dataset 進行資料分析與前處理。
 
 主要內容：
 
@@ -62,92 +65,98 @@ Scikit-learn 等工具應用於資料分析與機器學習模型建立。
 - 資料型態確認
 - 資料轉換
 - Data Preprocessing
-- Feature Engineering
 
-將原始 Dataset 整理成適合 Machine Learning
+將原始資料整理成適合 Machine Learning
 模型使用的格式。
 
 ---
 
-### 2. 資料降維
+### 2. 🔧 Feature Engineering
 
-**Notebook：**
+針對 Dataset 中的特徵進行整理與轉換。
 
-`2 資料降維-Dimensionality Reduction Techniques.ipynb`
+主要練習：
 
-主要內容：
-
-- Dimensionality Reduction
-- Principal Component Analysis（PCA）
+- Feature Selection
 - Feature Transformation
-- 減少特徵數量
-- 簡化高維度資料
+- 特徵整理
+- 特徵標準化
+- 建立模型所需的輸入資料
 
-透過資料降維方法了解高維度資料的處理方式，
-並降低資料的複雜度。
+透過 Feature Engineering，
+讓資料更適合後續模型訓練與分析。
 
 ---
 
-### 3. 迴歸模型與正則化
+### 3. 📉 Dimensionality Reduction
 
-**Notebook：**
+進行資料降維（Dimensionality Reduction）練習。
 
-`3 迴歸模型-Linear Models and Regularization.ipynb`
+主要目的：
 
-主要內容：
+- 降低資料維度
+- 減少特徵數量
+- 簡化資料結構
+- 協助資料分析
+- 降低模型處理複雜度
 
-- Linear Regression
+透過資料降維了解高維度資料的處理方式，
+並觀察降維後資料的變化。
+
+---
+
+### 4. 📈 Linear Regression
+
+使用 Linear Regression 建立迴歸模型，
+學習輸入特徵與預測結果之間的關係。
+
+基本流程：
+
+Dataset → Data Preprocessing → Feature Engineering
+→ Linear Regression → Model Training → Prediction
+
+專案中也使用房價資料進行迴歸相關練習，
+了解模型如何利用輸入特徵進行預測。
+
+---
+
+### 5. 🧮 Linear Models & Regularization
+
+進一步學習 Linear Models 與 Regularization。
+
+Regularization 用於控制模型複雜度，
+並降低模型發生 Overfitting 的風險。
+
+主要練習：
+
 - Linear Models
+- Regularization
 - Model Training
 - Model Evaluation
-- Regularization
 - Model Comparison
-- Prediction
 
-並將 Linear Regression 應用於房價預測相關練習。
-
----
-
-## 📁 資料集
-
-本專案使用多個 Dataset 進行資料處理與
-Machine Learning 練習。
-
-### Housing Dataset
-
-`data/housing.csv`
-
-用於房價預測與迴歸模型相關練習。
-
-### Regression Dataset
-
-`data/regression_data.csv`
-
-用於 Linear Regression 模型訓練與相關練習。
-
-`data` 資料夾中也包含其他課程練習使用的資料集，
-用於資料前處理、特徵工程與資料轉換。
+透過模型比較了解不同模型與正則化方法
+對預測結果的影響。
 
 ---
 
-## 🔄 Machine Learning Workflow
+### 6. 🔄 Machine Learning Pipeline
 
-本專案的整體機器學習流程：
+使用 Machine Learning Pipeline
+將資料處理與模型訓練流程整合。
+
+主要流程：
 
 ```text
 Dataset
    ↓
-資料分析
-   ↓
 Data Preprocessing
    ↓
-Feature Engineering
+Feature Transformation
    ↓
-Dimensionality Reduction
+Machine Learning Model
    ↓
-Linear Regression
-   ↓
-Regularization
+Model Training
    ↓
 Model Evaluation
    ↓
