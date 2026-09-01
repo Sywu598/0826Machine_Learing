@@ -38,14 +38,10 @@ Scikit-learn 等工具應用於資料分析與機器學習模型建立。
 
 - Python
 - Jupyter Notebook
-- NumPy
 - Pandas
 - Scikit-learn
-- Matplotlib
-- Seaborn
-- Plotly
-- SciPy
-- Joblib
+
+
 
 ---
 
